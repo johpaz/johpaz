@@ -36,25 +36,24 @@ Con una amplia experiencia en diseño de procesos de distribución, gestión de 
 4. [Proyecto 4](https://github.com/johpaz/juegonaves.git) - Juego de Pygame para enseñanza dirigida a niños desde los 10 años, mis primeros pasos en la programación.
 
 ## Habilidades Frontend Adicionales
-Habilidades Frontend Adicionales
-Leaflet.js Leaflet.js
-Node Cron Node Cron
-Chakra UI Chakra UI
-Webdriver Pruebas con Webdriver y Cypress
-Firebase Firebase
-Axios Axios
-Chart.js Chart.js
-React-Chartjs-2 React-Chartjs-2
-React-Leaflet React-Leaflet
-Framer Motion Framer Motion
-React-Slick React-Slick
-React-Simple-Chatbot React-Simple-Chatbot
-React-Hook-Form React-Hook-Form
-JWT-Decode JWT-Decode
-Zustand Zustand
-Integración de pasarelas de pago Integración de pasarelas de pago (mercadolibre, metamask)
-¡Y muchas más!
 
+- Leaflet.js
+- Node Cron
+- Chakra UI
+- Pruebas con Webdriver y Cypress
+- Firebase
+- Axios
+- Chart.js
+- React-Chartjs-2
+- React-Leaflet
+- Framer Motion
+- React-Slick
+- React-Simple-Chatbot
+- React-Hook-Form
+- JWT-Decode
+- Zustand
+- Integración de pasarelas de pago (mercadolibre, metamask)
+- ¡Y muchas más!
 
 ## Contacto
 
