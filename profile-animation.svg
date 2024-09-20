@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" aria-labelledby="profile-title" role="img">
+  <title id="profile-title">Perfil de John Alexander Páez Arias</title>
+  <style>
+    .text { 
+      font-family: Arial, sans-serif; 
+      font-size: 20px; 
+      fill: #333; 
+    }
+    .highlight { 
+      font-weight: bold; 
+      fill: #0366d6; 
+    }
+    @keyframes slide {
+      0% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+    .sliding-text {
+      animation: slide 10s linear infinite;
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f6f8fa" />
+
+  <!-- Welcome Text -->
+  <text x="50%" y="20" text-anchor="middle" class="text">
+    ¡Bienvenido a mi perfil de GitHub!
+  </text>
+
+  <!-- Introduction -->
+  <text x="50%" y="60" text-anchor="middle" class="text">
+    Hola, soy <tspan class="highlight">John Alexander Páez Arias</tspan>
+  </text>
+
+  <!-- Description -->
+  <text x="50%" y="90" text-anchor="middle" class="text">
+    Desarrollador Web y Móvil especializado en:
+  </text>
+
+  <!-- Sliding text for specialties -->
+  <g class="sliding-text">
+    <text x="0" y="115" class="text highlight">Backend</text>
+    <text x="200" y="115" class="text highlight">Frontend</text>
+    <text x="400" y="115" class="text highlight">Desarrollo Móvil</text>
+  </g>
+
+  <!-- Closing Line -->
+  <text x="50%" y="140" text-anchor="middle" class="text">
+    Transformando ideas en soluciones tecnológicas
+  </text>
+</svg>
