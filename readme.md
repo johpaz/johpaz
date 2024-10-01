@@ -80,7 +80,7 @@ Te invito a seguir mi canal de YouTube: **[Tu Profe de IA](https://youtube.com/c
 
 ## 📈 Gráfico de Contribuciones en 3D
 
-![](./profile-3d-contrib/profile-night-rainbow.svg)
+![](./profile-3d-contrib/profile-gitblock.svg)
 
 ---
 
