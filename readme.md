@@ -37,13 +37,13 @@ Soy **John Alexander Páez Arias**, un apasionado desarrollador **Web y Móvil**
 </div>
 
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=johpaz&theme=dark" alt="Racha de contribuciones de John" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=johpaz" alt="Racha de contribuciones de John" />
 </div>
 
 ## 🏆 Lenguajes más usados
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=compact&theme=radical" alt="Lenguajes más usados por John" />
+  <img src="https://github-readme-stats.vercel.app/api?username=johpaz&show_icons=true&theme=radical" alt="Lenguajes más usados por John" />
 </div>
 
 ## 🎥 **Streaming en YouTube: Tu Profe de IA**
