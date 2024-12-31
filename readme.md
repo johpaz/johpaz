@@ -43,6 +43,7 @@ Soy **John Alexander Páez Arias**, un apasionado desarrollador **Web y Móvil**
 ## 🏆 Lenguajes más usados
 
 <div align="center">
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=donut-vertical)](https://github.com/johpaz/github-readme-stats)
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=pie" alt="Lenguajes más usados por John" />
 </div>
 
