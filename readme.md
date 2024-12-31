@@ -43,7 +43,7 @@ Soy **John Alexander Páez Arias**, un apasionado desarrollador **Web y Móvil**
 ## 🏆 Lenguajes más usados
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=johpaz&show_icons=true&theme=radical" alt="Lenguajes más usados por John" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide_progress=true" alt="Lenguajes más usados por John" />
 </div>
 
 ## 🎥 **Streaming en YouTube: Tu Profe de IA**
