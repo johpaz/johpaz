@@ -48,7 +48,7 @@ Soy **John Alexander Páez Arias**, un apasionado desarrollador **Web y Móvil**
 
 ## 🎥 **Streaming en YouTube: Tu Profe de IA**
 
-Te invito a seguir mi canal de YouTube: **[Tu Profe de IA](https://youtube.com/tuprofeia)**, donde enseño sobre:
+Te invito a seguir mi canal de YouTube: **[Tu Profe de IA](https://www.youtube.com/@tuprofedeIA)**, donde enseño sobre:
 - **Inteligencia Artificial** aplicada a negocios y desarrollo.
 - **Herramientas de IA** para crear contenido, imágenes, videos y más.
 - **Ejercicios prácticos en vivo** sobre cómo implementar IA en tus proyectos.
