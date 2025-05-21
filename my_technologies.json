@@ -1,0 +1,10 @@
+[
+  { "name": "JavaScript", "icon": "javascript", "color": "#F7DF1E" },
+  { "name": "React", "icon": "react", "color": "#61DAFB" },
+  { "name": "Node.js", "icon": "nodedotjs", "color": "#339933" },
+  { "name": "Python", "icon": "python", "color": "#3776AB" },
+  { "name": "TypeScript", "icon": "typescript", "color": "#3178C6" },
+  { "name": "Docker", "icon": "docker", "color": "#2496ED" },
+  { "name": "AWS", "icon": "amazonaws", "color": "#232F3E" },
+  { "name": "MongoDB", "icon": "mongodb", "color": "#47A248" }
+]

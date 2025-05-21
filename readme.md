@@ -86,7 +86,11 @@ Aquí algunos de los proyectos en los que he trabajado:
 -   **Miércoles y Viernes (6:00 PM)**: IA aplicada a emprendimientos.
 
 ---
-
+## 🚀 Mi Stack Tecnológico en 3D
+<div align="center">
+  <img src="./tech_stack_display.svg" alt="Mi Stack Tecnológico" width="600"> 
+</div>
+*(Este gráfico se actualiza automáticamente mostrando las tecnologías que uso)*
 ## 📞 Contacto
 
 ¡Conectemos! Estoy abierto a nuevas oportunidades de colaboración y proyectos desafiantes.
