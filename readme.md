@@ -19,13 +19,15 @@ Soy un apasionado desarrollador **Web y Móvil** con una sólida trayectoria en 
 
 ---
 
-## 📊 Mis Estadísticas en GitHub
+## 📊 Mis Estadísticas y Lenguajes en GitHub
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=johpaz&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="Estadísticas de GitHub de John" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=compact&langs_count=8&theme=radical" alt="Lenguajes más usados por John" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=johpaz&theme=radical" alt="Racha de contribuciones de John" />
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=compact&langs_count=8&theme=radical" alt="Lenguajes más usados por John en GitHub" />
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=johpaz&theme=radical" alt="Racha de contribuciones de John en GitHub" />
 </div>
+
+*La tarjeta de "Lenguajes más usados" se genera dinámicamente a partir de los datos de mis repositorios públicos en GitHub.*
 
 ---
 
@@ -82,15 +84,6 @@ Aquí algunos de los proyectos en los que he trabajado:
 ### 📅 Horarios de Transmisiones en Vivo (Hora Colombia GMT-5):
 -   **Lunes (6:00 PM)**: Creación de imágenes, videos, reels y más con IA.
 -   **Miércoles y Viernes (6:00 PM)**: IA aplicada a emprendimientos.
-
----
-
-## 📈 Gráfico de Contribuciones en 3D
-
-A continuación, una visualización 3D de mis contribuciones en GitHub.
-*(Este gráfico se actualiza mediante una GitHub Action en mi repositorio)*
-
-![](./profile-3d-contrib/profile-gitblock.svg)
 
 ---
 
