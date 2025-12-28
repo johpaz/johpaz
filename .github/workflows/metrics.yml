@@ -20,7 +20,7 @@ jobs:
                   # Output configuration
                   filename: github-metrics.svg
                   committer_message: "chore: update metrics"
-                  committer_branch: main
+                  committer_branch: master
 
                   # Options
                   user: johpaz
