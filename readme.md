@@ -30,7 +30,7 @@ Soy un apasionado desarrollador **Web y Móvil** con una sólida trayectoria en 
 ## 📈 Métricas Detalladas de GitHub
 
 <div align="center">
-  <img src="https://github.com/johpaz/johpaz/blob/master/github-metrics.svg" alt="Métricas detalladas de GitHub" width="100%">
+  <img src="https://raw.githubusercontent.com/johpaz/johpaz/master/github-metrics.svg" alt="Métricas detalladas de GitHub" width="100%">
 </div>
 
 ---
