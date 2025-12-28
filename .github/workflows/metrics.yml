@@ -17,6 +17,11 @@ jobs:
                   # Your GitHub token
                   token: ${{ secrets.METRICS_TOKEN }}
 
+                  # Output configuration
+                  filename: github-metrics.svg
+                  committer_message: "chore: update metrics"
+                  committer_branch: main
+
                   # Options
                   user: johpaz
                   template: classic
