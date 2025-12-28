@@ -31,6 +31,14 @@ Soy un apasionado desarrollador **Web y Móvil** con una sólida trayectoria en 
 
 ---
 
+## 📈 Métricas Detalladas de GitHub
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/johpaz/johpaz/main/github-metrics.svg" alt="Métricas detalladas de GitHub" width="100%">
+</div>
+
+---
+
 ## 🛠️ Tecnologías y Herramientas
 
 <div align="center">
@@ -86,11 +94,17 @@ Aquí algunos de los proyectos en los que he trabajado:
 -   **Miércoles y Viernes (6:00 PM)**: IA aplicada a emprendimientos.
 
 ---
-## 🚀 Mi Stack Tecnológico en 3D
+
+## 🐍 Contribuciones
+
 <div align="center">
-  <img src="./tech_stack_display.svg" alt="Mi Stack Tecnológico" width="600"> 
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake.svg">
+    <img alt="Animación de contribuciones" src="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake.svg">
+  </picture>
 </div>
-*(Este gráfico se actualiza automáticamente mostrando las tecnologías que uso)*
+
 ---
 
 ## 📞 Contacto
