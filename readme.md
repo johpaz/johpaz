@@ -21,11 +21,7 @@ Soy un apasionado desarrollador **Web y Móvil** con una sólida trayectoria en 
 
 ## 📊 Mis Estadísticas y Lenguajes en GitHub
 
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=johpaz&show_icons=true&theme=radical&include_all_commits=true&count_private=true" alt="Estadísticas de GitHub de John" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=compact&langs_count=8&theme=radical" alt="Lenguajes más usados por John en GitHub" />
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=johpaz&theme=radical" alt="Racha de contribuciones de John en GitHub" />
-</div>
+
 
 *La tarjeta de "Lenguajes más usados" se genera dinámicamente a partir de los datos de mis repositorios públicos en GitHub.*
 
