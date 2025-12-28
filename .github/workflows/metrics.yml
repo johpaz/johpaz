@@ -20,7 +20,7 @@ jobs:
                   # Options
                   user: johpaz
                   template: classic
-                  base: header, activity, community, repositories, metadata
+                  base: header, community, repositories, metadata
                   config_timezone: America/Bogota
 
                   # Languages plugin
@@ -39,10 +39,6 @@ jobs:
                   plugin_stars: yes
                   plugin_stars_limit: 4
 
-                  # Activity plugin
-                  plugin_activity: yes
-                  plugin_activity_days: 14
-                  plugin_activity_filter: all
-                  plugin_activity_limit: 5
-                  plugin_activity_load: 300
-                  plugin_activity_visibility: all
+                  # Isocalendar plugin (replaces activity)
+                  plugin_isocalendar: yes
+                  plugin_isocalendar_duration: half-year
