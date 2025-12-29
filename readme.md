@@ -15,7 +15,7 @@
 
 ## 👋 ¡Hola! Soy John Alexander Páez Arias
 
-Soy **Ingeniero de Software, Arquitecto de Soluciones con IA y Educador Tech**, con más de **20 años de experiencia** combinando tecnología, logística, automatización y emprendimiento.
+Soy **Ingeniero de Desarrollador Full Stack, Deep Learning& Machine learning Engineer, Arquitecto de Soluciones con IA y Educador Tech**, con más de **3 años de experiencia** combinando tecnología, logística, automatización y emprendimiento.
 
 Me especializo en **crear sistemas inteligentes que resuelven problemas reales**, desde:
 - plataformas web y móviles,
