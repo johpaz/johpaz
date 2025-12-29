@@ -33,7 +33,7 @@ jobs:
                   plugin_languages_analysis_timeout: 15
                   plugin_languages_categories: markup, programming
                   plugin_languages_colors: github
-                  plugin_languages_limit: 8
+                  plugin_languages_limit: 10
                   plugin_languages_sections: most-used
                   plugin_languages_threshold: 0%
                   plugin_languages_details: bytes-size, percentage
@@ -41,9 +41,13 @@ jobs:
 
                   # Notable repositories plugin
                   plugin_notable: yes
-                  plugin_notable_from: all
+                  plugin_notable_from: owner
                   plugin_notable_self: yes
                   plugin_notable_repositories: yes
+
+                  # Stars plugin
+                  plugin_stars: yes
+                  plugin_stars_limit: 4
 
                   # Achievements plugin
                   plugin_achievements: yes
