@@ -9,7 +9,7 @@
   <a href="https://linkedin.com/in/john-alexander-paez-arias-543b0254/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
-  <a href="https://tuprofeia.com.co">
+  <a href="https://tuprofedeia.com.co">
     <img src="https://img.shields.io/badge/Web-Actualizada-success?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website">
   </a>
 </div>
@@ -74,7 +74,7 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
       Trazabilidad con QR e inteligencia en logística.
     </td>
     <td width="50%">
-      <b>🎓 <a href="https://tuprofeia.com.co">Tu Profe IA Web</a></b><br/>
+      <b>🎓 <a href="https://tuprofedeia.com.co">Tu Profe IA Web</a></b><br/>
       Ecosistema educativo de IA aplicada.
     </td>
   </tr>
