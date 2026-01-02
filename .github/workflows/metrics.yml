@@ -46,8 +46,8 @@ jobs:
                   plugin_lines_repositories_limit: 4
                   plugin_lines_sections: base
 
-                  # ✅ Tráfico de repositorios (FUNCIONA)
-                  plugin_traffic: yes
+                  # ✅ Tráfico de repositorios (DESACTIVADO POR SCOPE)
+                  plugin_traffic: no
 
                   # ✅ Estrellas y forks (FUNCIONA)
                   plugin_stargazers: yes
