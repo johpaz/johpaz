@@ -41,4 +41,4 @@ jobs:
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
               env:
-                  GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+                  METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}

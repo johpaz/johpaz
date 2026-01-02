@@ -41,7 +41,7 @@ Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarr
 | :--- | :--- | :--- |
 | **Frameworks**: LangChain, LangGraph | **Runtime**: Node.js, Bun | **Infra**: Docker, Kubernetes |
 | **LLMs**: Gemini SDK, OpenAI API | **Front**: React, Next.js, Vite | **Cloud**: Google Cloud, AWS |
-| **Tools**: n8n, Flowise, Vector DBs | **Backend**: TypeScript, Elysia.js | **DBs**: PostgreSQL, MongoDB |
+| **Tools**: n8n, Flowise, Vector DBs | **Backend**: TypeScript, Elysia.js,Python | **DBs**: PostgreSQL, MongoDB |
 
 ---
 
