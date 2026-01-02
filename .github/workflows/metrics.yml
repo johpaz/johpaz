@@ -37,7 +37,7 @@ jobs:
           plugin_lines: yes
           plugin_lines_sections: base
 
-          plugin_traffic: yes
+          plugin_traffic: no
           plugin_languages: no
 
           plugin_achievements: no
