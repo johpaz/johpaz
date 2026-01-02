@@ -26,7 +26,7 @@
 
 ## 👨‍💻 Sobre Mí
 
-Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarrollador Full Stack con enfoque en **IA Agentic**. Con más de 3 años de experiencia, construyo soluciones que cierran la brecha entre la IA avanzada y la operatividad empresarial.
+Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarrollador Full Stack con enfoque en **IA Agentic**. Con más de 3 años de experiencia, construyo soluciones que cierran la brecha entre la IA avanzada y la operatividad empresarial (Logística, Agro y Educación).
 
 ### 🎯 Enfoque Actual
 *   🧠 **Agentes de IA & Sistemas Autónomos**: Desarrollo con LangChain y LangGraph.
@@ -41,18 +41,16 @@ Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarr
 | :--- | :--- | :--- |
 | **Frameworks**: LangChain, LangGraph | **Runtime**: Node.js, Bun | **Infra**: Docker, Kubernetes |
 | **LLMs**: Gemini SDK, OpenAI API | **Front**: React, Next.js, Vite | **Cloud**: Google Cloud, AWS |
-| **Tools**: n8n, Flowise, Vector DBs | **Backend**: TypeScript, Elysia.js, Python | **DBs**: PostgreSQL, MongoDB |
+| **Tools**: n8n, Flowise, Vector DBs | **Backend**: TypeScript, Elysia.js,Python | **DBs**: PostgreSQL, MongoDB |
 
 ---
 
-## 📊 Mis Estadísticas y Lenguajes en GitHub
-    
+## 🎥 Tu Profe de IA
+Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, simplificando la IA para emprendedores y desarrolladores.
+
 <div align="center">
-
-{{ STATS }}
-
-{{ LANGUAGES }}
-
+  <p><b>📅 En vivos (Hora Colombia GMT-5)</b></p>
+  <p>Lunes: Creación de Contenido | Miércoles y Viernes: IA aplicada a negocios</p>
 </div>
 
 ---
@@ -81,6 +79,14 @@ Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarr
     </td>
   </tr>
 </table>
+
+---
+
+## 📊 Mis Estadísticas y Lenguajes en GitHub
+
+<div align="center">
+  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%">
+</div>
 
 ---
 
