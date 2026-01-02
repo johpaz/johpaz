@@ -22,11 +22,11 @@ jobs:
                   template: classic
                   config_timezone: America/Bogota
 
-                  # Base: Solo lo esencial para evitar secciones vacías
+                  # Base: Información esencial
                   base: header, activity, community, repositories, metadata
                   repositories_affiliations: owner
 
-                  # Lenguajes: Mostrar el poder real
+                  # ✅ Lenguajes (FUNCIONA)
                   plugin_languages: yes
                   plugin_languages_ignored: html, css
                   plugin_languages_limit: 8
@@ -34,41 +34,41 @@ jobs:
                   plugin_languages_details: bytes-size, percentage
                   plugin_languages_indepth: no
                   plugin_languages_analysis_timeout: 15
+                  plugin_languages_colors: github
 
-                  # ❌ ACHIEVEMENTS DESACTIVADO (Bug con Projects Classic)
-                  plugin_achievements: no
-
-                  # ✅ Alternativa: Plugin de contribuciones notables
-                  plugin_notable: yes
-                  plugin_notable_from: organization
-                  plugin_notable_types: commit, pull_request, issue
-                  plugin_notable_indepth: yes
-                  plugin_notable_repositories: yes
-
-                  # ❌ HABITS DESACTIVADO (Bug con author undefined)
-                  plugin_habits: no
-
-                  # ✅ Alternativa: Plugin de actividad reciente
-                  plugin_activity: yes
-                  plugin_activity_limit: 5
-                  plugin_activity_days: 14
-                  plugin_activity_timestamps: yes
-                  plugin_activity_filter: all
-
-                  # Calendario 3D
+                  # ✅ Calendario de commits (FUNCIONA)
                   plugin_isocalendar: yes
                   plugin_isocalendar_duration: half-year
 
-                  # ✅ NUEVO: Racha de commits
+                  # ✅ Líneas de código (FUNCIONA)
+                  plugin_lines: yes
+                  plugin_lines_history_limit: 1
+                  plugin_lines_repositories_limit: 4
+                  plugin_lines_sections: base
+
+                  # ✅ Tráfico de repositorios (FUNCIONA)
+                  plugin_traffic: yes
+
+                  # ✅ Estrellas y forks (FUNCIONA)
                   plugin_stargazers: yes
                   plugin_stargazers_charts: yes
                   plugin_stargazers_charts_type: classic
 
-                  # ✅ NUEVO: Tus repos más activos
+                  # ✅ Gists (FUNCIONA)
+                  plugin_gists: yes
+
+                  # ✅ Repositorios destacados (FUNCIONA)
                   plugin_repositories: yes
                   plugin_repositories_order: featured, pinned, starred, random
 
-                  # Debug para ver errores si persisten
+                  # ❌ TODOS LOS PLUGINS CON BUGS DESACTIVADOS
+                  plugin_achievements: no
+                  plugin_habits: no
+                  plugin_activity: no
+                  plugin_notable: no
+                  plugin_followup: no
+
+                  # Debug desactivado
                   debug: no
 
             - name: Checkout repository
