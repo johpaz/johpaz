@@ -36,14 +36,14 @@ jobs:
                   plugin_languages_analysis_timeout: 15
 
                   # Achievements: Medallas de honor
-                  plugin_achievements: yes
+                  plugin_achievements: no
                   plugin_achievements_threshold: B
                   plugin_achievements_display: compact
                   plugin_achievements_ignored: member, projects
                   plugin_achievements_limit: 8
 
                   # Habits: Tu ritmo de programación
-                  plugin_habits: yes
+                  plugin_habits: no
                   plugin_habits_from: 200
                   plugin_habits_days: 14
                   plugin_habits_facts: no
