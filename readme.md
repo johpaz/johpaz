@@ -84,8 +84,9 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
 
 ## 📊 Mis Estadísticas y Lenguajes en GitHub
 
-<!-- profile-readme-stats start -->
-<!-- profile-readme-stats end -->
+<div align="center">
+  <img src="github-metrics.svg" alt="GitHub Metrics" width="100%">
+</div>
 
 ---
 
