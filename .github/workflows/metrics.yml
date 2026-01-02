@@ -37,6 +37,8 @@ jobs:
                   plugin_languages_sections: most-used
                   plugin_languages_threshold: 0%
                   plugin_languages_details: bytes-size, percentage
+                  plugin_languages_skipped: "" # Asegurar que no se salte nada propio
+                  plugin_languages_other: no # No mostrar "otros" para mantener limpieza
                   # plugin_languages_indepth: yes # Deshabilitado para mejorar estabilidad
 
                   # Notable repositories plugin
@@ -44,24 +46,25 @@ jobs:
                   plugin_notable_from: owner, self
                   plugin_notable_self: yes
                   plugin_notable_repositories: yes
+                  plugin_notable_types: owner # Solo mostrar repositorios donde soy dueño
 
-                  # Stars plugin
-                  plugin_stars: yes
-                  plugin_stars_limit: 4
+                  # Base configuration
+                  # repositories_affiliations: owner # Esto obligaría a que el bloque base solo use mis repositorios
 
                   # Achievements plugin
                   plugin_achievements: yes
                   plugin_achievements_threshold: B
-                  plugin_achievements_secrets: no # Deshabilitado para evitar errores de scope
+                  plugin_achievements_secrets: no
                   plugin_achievements_limit: 10
 
                   # Habits plugin
                   plugin_habits: yes
-                  plugin_habits_from: 100 # Reducido para evitar timeouts
+                  plugin_habits_from: 100
                   plugin_habits_days: 14
                   plugin_habits_facts: yes
                   plugin_habits_charts: yes
+                  plugin_habits_trim: yes # Ignorar eventos menos relevantes
 
-                  # Isocalendar plugin (replaces activity)
+                  # Isocalendar plugin
                   plugin_isocalendar: yes
                   plugin_isocalendar_duration: half-year
