@@ -31,8 +31,9 @@ jobs:
           repositories_affiliations: owner
           repositories_forks: no
 
+          # Isocalendar (Gráfico 3D): Año completo para ver mejor los meses
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
 
           plugin_lines: yes
           plugin_lines_sections: base
@@ -98,7 +99,7 @@ jobs:
         with:
           github_user_name: johpaz
           outputs: |
-            github-contribution-grid-snake.svg
+            github-contribution-grid-snake.svg?palette=github-light
             github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
