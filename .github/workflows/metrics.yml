@@ -10,79 +10,67 @@ jobs:
         permissions:
             contents: write
         steps:
-            - name: Generate GitHub Metrics
+            # ============================================
+            # 1. MÉTRICA GENERAL
+            # ============================================
+            - name: General Metrics
               uses: lowlighter/metrics@latest
               with:
-                  # Token con scope "repo" completo
                   token: ${{ secrets.METRICS_TOKEN }}
+                  committer_token: ${{ secrets.METRICS_TOKEN }}
+
                   filename: github-metrics.svg
                   committer_branch: master
+                  committer_message: "chore: update github metrics [skip ci]"
+
                   user: johpaz
                   template: classic
                   config_timezone: America/Bogota
 
-                  # Base
                   base: header, activity, community, repositories, metadata
                   repositories_affiliations: owner
+                  repositories_forks: no
 
-                  # ✅ Lenguajes
                   plugin_languages: yes
-                  plugin_languages_ignored: html, css
-                  plugin_languages_limit: 8
-                  plugin_languages_sections: most-used
+                  plugin_languages_ignored: html, css, scss
+                  plugin_languages_limit: 10
+                  plugin_languages_threshold: 0%
+                  plugin_languages_sections: most-used, recently-used
                   plugin_languages_details: bytes-size, percentage
-                  plugin_languages_indepth: no
-                  plugin_languages_analysis_timeout: 15
+                  plugin_languages_indepth: yes
+                  plugin_languages_analysis_timeout: 30
 
-                  # ✅ Calendario
                   plugin_isocalendar: yes
                   plugin_isocalendar_duration: half-year
 
-                  # ✅ Líneas de código (requiere scope "repo")
                   plugin_lines: yes
-                  plugin_lines_history_limit: 1
-                  plugin_lines_repositories_limit: 4
-                  plugin_lines_sections: base
-
-                  # ✅ Tráfico (requiere scope "repo")
                   plugin_traffic: yes
 
-                  # ✅ Stargazers
-                  plugin_stargazers: yes
-                  plugin_stargazers_charts: yes
-                  plugin_stargazers_charts_type: classic
-
-                  # ✅ Gists
-                  plugin_gists: yes
-
-                  # ✅ Repositorios destacados
-                  plugin_repositories: yes
-                  plugin_repositories_order: featured, pinned, starred, random
-
-                  # ❌ Plugins con bugs desactivados
                   plugin_achievements: no
                   plugin_habits: no
                   plugin_activity: no
-                  plugin_notable: no
-                  plugin_followup: no
 
+            # ============================================
+            # 2. SNAKE - COMMITEAR A MASTER
+            # ============================================
             - name: Checkout repository
               uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
 
             - name: Generate GitHub Contribution Snake
               uses: Platane/snk/svg-only@v3
               with:
                   github_user_name: johpaz
                   outputs: |
-                      dist/github-contribution-grid-snake.svg
-                      dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+                      github-contribution-grid-snake.svg
+                      github-contribution-grid-snake-dark.svg?palette=github-dark
               env:
                   GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
 
-            - name: Push Assets to output branch
-              uses: crazy-max/ghaction-github-pages@v3.1.0
-              with:
-                  target_branch: output
-                  build_dir: dist
-              env:
-                  GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+            - name: Commit Snake to master
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git add -A github-contribution-grid-snake*.svg
+                  git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update snake animation [skip ci]" && git push)

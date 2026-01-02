@@ -81,7 +81,6 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
 </table>
 
 ---
-
 ## 📊 Mis Estadísticas y Lenguajes en GitHub
 
 <div align="center">
@@ -94,14 +93,11 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake.svg">
-    <img src="https://raw.githubusercontent.com/johpaz/johpaz/output/github-contribution-grid-snake.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="github-contribution-grid-snake.svg">
+    <img src="github-contribution-grid-snake.svg" width="100%">
   </picture>
 </div>
-
----
-
 ## 📞 Conectemos
 
 <div align="center">
