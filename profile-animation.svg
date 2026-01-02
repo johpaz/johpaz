@@ -1,51 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" aria-labelledby="profile-title" role="img">
-  <title id="profile-title">Perfil de John Alexander Páez Arias</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" aria-labelledby="profile-title" role="img">
+  <title id="profile-title">John Alexander Páez Arias - AI & Automation Portfolio</title>
+  
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Blue Glow Gradient -->
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bc8cff;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Filters for Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
   <style>
-    .text { 
-      font-family: Arial, sans-serif; 
-      font-size: 20px; 
-      fill: #333; 
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono&amp;display=swap');
+
+    .text { font-family: 'Inter', Arial, sans-serif; fill: #c9d1d9; }
+    .name { font-size: 32px; font-weight: 700; fill: #f0f6fc; filter: url(#glow); }
+    .role { font-size: 18px; font-weight: 400; fill: #8b949e; font-family: 'JetBrains Mono', monospace; }
+    .highlight { fill: url(#glow-grad); font-weight: 700; }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .highlight { 
-      font-weight: bold; 
-      fill: #0366d6; 
+
+    @keyframes pulse {
+      0% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.05); }
+      100% { opacity: 0.6; transform: scale(1); }
     }
-    @keyframes slide {
-      0% { transform: translateX(-100%); }
-      100% { transform: translateX(100%); }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
-    .sliding-text {
-      animation: slide 10s linear infinite;
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
     }
+
+    @keyframes cycleText {
+      0%, 25% { opacity: 0; transform: translateY(10px); }
+      30%, 55% { opacity: 1; transform: translateY(0); }
+      60%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+
+    .animate-in { animation: fadeInUp 1s ease-out forwards; }
+    .pulse { animation: pulse 3s infinite ease-in-out; }
+    .gear { transform-origin: center; animation: rotate 10s linear infinite; }
+    .floating { animation: float 4s infinite ease-in-out; }
+    
+    .cycling-text { opacity: 0; position: absolute; }
+    .text-1 { animation: cycleText 9s linear infinite; }
+    .text-2 { animation: cycleText 9s linear 3s infinite; }
+    .text-3 { animation: cycleText 9s linear 6s infinite; }
   </style>
 
-  <!-- Background -->
-  <rect width="100%" height="100%" fill="#f6f8fa" />
+  <!-- Background container -->
+  <rect width="700" height="250" rx="12" fill="url(#bg-grad)" stroke="#30363d" stroke-width="1" />
 
-  <!-- Welcome Text -->
-  <text x="50%" y="20" text-anchor="middle" class="text">
-    ¡Bienvenido a mi perfil de GitHub!
-  </text>
+  <!-- Icons Group (Floating) -->
+  <g class="floating">
+    <!-- AI Brain Node -->
+    <g transform="translate(50, 60)">
+      <circle cx="30" cy="30" r="25" fill="#1f2428" stroke="#58a6ff" stroke-width="2" class="pulse" />
+      <path d="M22,30 Q30,20 38,30 Q30,40 22,30" fill="none" stroke="#58a6ff" stroke-width="2" />
+      <circle cx="30" cy="30" r="4" fill="#58a6ff" />
+      <path d="M30,15 L30,45 M15,30 L45,30" stroke="#58a6ff" stroke-opacity="0.3" />
+    </g>
 
-  <!-- Introduction -->
-  <text x="50%" y="60" text-anchor="middle" class="text">
-    Hola, soy <tspan class="highlight">John Alexander Páez Arias</tspan>
-  </text>
+    <!-- Gears (Automation) -->
+    <g transform="translate(50, 150)">
+      <g class="gear">
+        <path d="M30,10 L34,10 L36,16 A20,20 0 0,1 44,19 L50,15 L53,19 L48,25 A20,20 0 0,1 50,34 L56,38 L54,42 L48,43 A20,20 0 0,1 42,52 L45,58 L41,61 L35,56 A20,20 0 0,1 25,54 L20,60 L17,57 L22,51 A20,20 0 0,1 18,42 L12,38 L14,34 L21,33 A20,20 0 0,1 23,24 L18,17 L22,14 L28,20 A20,20 0 0,1 30,10 Z M30,40 A10,10 0 1,0 30,20 A10,10 0 0,0 30,40 Z" fill="#8b949e" />
+      </g>
+    </g>
 
-  <!-- Description -->
-  <text x="50%" y="90" text-anchor="middle" class="text">
-    Desarrollador Web y Móvil especializado en:
-  </text>
-
-  <!-- Sliding text for specialties -->
-  <g class="sliding-text">
-    <text x="0" y="115" class="text highlight">Backend</text>
-    <text x="200" y="115" class="text highlight">Frontend</text>
-    <text x="400" y="115" class="text highlight">Desarrollo Móvil</text>
+    <!-- Code (Dev) -->
+    <g transform="translate(580, 100)">
+      <text x="0" y="40" class="role highlight" style="font-size: 40px;">&lt;/&gt;</text>
+    </g>
   </g>
 
-  <!-- Closing Line -->
-  <text x="50%" y="140" text-anchor="middle" class="text">
-    Transformando ideas en soluciones tecnológicas
-  </text>
+  <!-- Main Content -->
+  <g transform="translate(120, 80)">
+    <text x="0" y="0" class="name animate-in">John Alexander Páez Arias</text>
+    <text x="0" y="35" class="role animate-in" style="animation-delay: 0.2s;">Specialist in Intelligent Systems</text>
+    
+    <!-- Cycling Specializations -->
+    <g transform="translate(0, 75)">
+      <text x="0" y="0" class="role highlight text-1"># AI_Agents_Development</text>
+      <text x="0" y="0" class="role highlight text-2"># Business_Automation</text>
+      <text x="0" y="0" class="role highlight text-3"># AI-Driven_Software</text>
+    </g>
+  </g>
+
+  <!-- Decorative Network Nodes -->
+  <g opacity="0.2">
+    <circle cx="650" cy="50" r="3" fill="#58a6ff" />
+    <circle cx="620" cy="30" r="2" fill="#58a6ff" />
+    <circle cx="680" cy="80" r="4" fill="#bc8cff" />
+    <line x1="650" y1="50" x2="620" y2="30" stroke="#58a6ff" stroke-width="0.5" />
+    <line x1="650" y1="50" x2="680" y2="80" stroke="#58a6ff" stroke-width="0.5" />
+  </g>
+
+  <!-- Tagline -->
+  <text x="350" y="220" text-anchor="middle" class="role" style="font-size: 14px; opacity: 0.6;">Next-Gen Solutions with Artificial Intelligence</text>
 </svg>
+
