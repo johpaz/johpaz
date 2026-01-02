@@ -91,7 +91,7 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
 ## 💻 Lenguajes Más Usados
 
 <div align="center">
-  <img src="languages.svg" alt="Lenguajes de Programación" width="100%">
+  <img src="github-languages.svg" alt="Lenguajes de Programación" width="100%">
 </div>
 
 ## 📈 Actividad del Desarrollador
