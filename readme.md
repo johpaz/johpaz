@@ -82,6 +82,23 @@ Creador de contenido en **[YouTube](https://www.youtube.com/@tuprofedeIA)**, sim
 
 ---
 
+## 📊 Mis Estadísticas y Lenguajes en GitHub
+
+<div align="center">
+  <table border="0">
+    <tr>
+      <td width="50%">
+        <img src="https://github-readme-stats.vercel.app/api?username=johpaz&show_icons=true&theme=radical&hide_border=true&count_private=true" width="100%" alt="Estadísticas de GitHub de John" />
+      </td>
+      <td width="50%">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=johpaz&layout=compact&theme=radical&hide_border=true&langs_count=8" width="100%" alt="Lenguajes más usados por John" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
 ## 📈 Actividad del Desarrollador
 
 <div align="center">
