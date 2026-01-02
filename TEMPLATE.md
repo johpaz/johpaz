@@ -47,13 +47,9 @@ Soy **John Alexander Páez Arias**, Specialist en Sistemas Inteligentes y Desarr
 
 ## 📊 Mis Estadísticas y Lenguajes en GitHub
 
-<div align="center">
-
 {{ STATS }}
 
 {{ LANGUAGES }}
-
-</div>
 
 ---
 

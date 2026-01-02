@@ -40,6 +40,13 @@ jobs:
               uses: teoxoy/profile-readme-stats@v2
               with:
                   token: ${{ secrets.METRICS_TOKEN }}
-              env:
-                  GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-                  METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
+                  template: ./TEMPLATE.md
+                  readme: ./README.md
+
+            - name: Commit and push changes
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git add README.md
+                  git commit -m "docs: update profile metrics [skip ci]" || echo "No changes to commit"
+                  git push
