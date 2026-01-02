@@ -31,40 +31,36 @@ jobs:
                   repositories_affiliations: owner
                   repositories_forks: no
 
-                  # ✅ LENGUAJES - SIN recently-used
                   plugin_languages: yes
                   plugin_languages_ignored: html, css, scss
                   plugin_languages_limit: 10
                   plugin_languages_threshold: 0%
-                  plugin_languages_sections: most-used # ← SOLO most-used
+                  plugin_languages_sections: most-used
                   plugin_languages_details: bytes-size, percentage
                   plugin_languages_colors: github
                   plugin_languages_indepth: yes
                   plugin_languages_analysis_timeout: 30
 
-                  # Calendario
                   plugin_isocalendar: yes
                   plugin_isocalendar_duration: half-year
 
-                  # Líneas de código
                   plugin_lines: yes
                   plugin_lines_sections: base
 
-                  # Tráfico (requiere scope repo)
                   plugin_traffic: yes
 
-                  # Desactivar plugins con bugs
                   plugin_achievements: no
                   plugin_habits: no
                   plugin_activity: no
                   plugin_notable: no
 
             # ============================================
-            # 2. SNAKE
+            # 2. SNAKE - CON PULL ANTES DE PUSH
             # ============================================
             - name: Checkout repository
               uses: actions/checkout@v3
               with:
+                  ref: master
                   fetch-depth: 0
 
             - name: Generate GitHub Contribution Snake
@@ -77,9 +73,19 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
 
-            - name: Commit Snake to master
+            - name: Commit and Push Snake
               run: |
                   git config user.name "github-actions[bot]"
                   git config user.email "github-actions[bot]@users.noreply.github.com"
+
+                  # Pull para sincronizar con el commit de Metrics
+                  git pull origin master --rebase
+
+                  # Agregar los archivos del snake
                   git add -A github-contribution-grid-snake*.svg
-                  git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update snake animation [skip ci]" && git push)
+
+                  # Commit solo si hay cambios
+                  git diff --quiet && git diff --staged --quiet || (git commit -m "chore: update snake animation [skip ci]")
+
+                  # Push con retry por si hay conflictos
+                  git push origin master || (git pull --rebase && git push origin master)
