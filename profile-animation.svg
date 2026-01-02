@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" aria-labelledby="profile-title" role="img">
-  <title id="profile-title">John Alexander Páez Arias - AI & Automation Portfolio</title>
+  <title id="profile-title">John Alexander Páez Arias - AI &amp; Automation Portfolio</title>
   
   <defs>
     <!-- Background Gradient -->
@@ -22,11 +22,10 @@
   </defs>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;family=JetBrains+Mono&amp;display=swap');
-
-    .text { font-family: 'Inter', Arial, sans-serif; fill: #c9d1d9; }
-    .name { font-size: 32px; font-weight: 700; fill: #f0f6fc; filter: url(#glow); }
-    .role { font-size: 18px; font-weight: 400; fill: #8b949e; font-family: 'JetBrains Mono', monospace; }
+    /* Usamos fuentes del sistema para máxima compatibilidad con GitHub */
+    .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9d1d9; }
+    .name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; fill: #f0f6fc; filter: url(#glow); }
+    .role { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 18px; font-weight: 400; fill: #8b949e; }
     .highlight { fill: url(#glow-grad); font-weight: 700; }
 
     /* Animations */
@@ -59,10 +58,9 @@
 
     .animate-in { animation: fadeInUp 1s ease-out forwards; }
     .pulse { animation: pulse 3s infinite ease-in-out; }
-    .gear { transform-origin: center; animation: rotate 10s linear infinite; }
+    .gear { transform-origin: center; animation: rotate 10s linear infinite; transform-box: fill-box; }
     .floating { animation: float 4s infinite ease-in-out; }
     
-    .cycling-text { opacity: 0; position: absolute; }
     .text-1 { animation: cycleText 9s linear infinite; }
     .text-2 { animation: cycleText 9s linear 3s infinite; }
     .text-3 { animation: cycleText 9s linear 6s infinite; }
@@ -119,4 +117,3 @@
   <!-- Tagline -->
   <text x="350" y="220" text-anchor="middle" class="role" style="font-size: 14px; opacity: 0.6;">Next-Gen Solutions with Artificial Intelligence</text>
 </svg>
-
