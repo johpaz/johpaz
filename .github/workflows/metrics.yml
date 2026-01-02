@@ -28,6 +28,9 @@ jobs:
                   base: header, community, repositories, metadata
                   config_timezone: America/Bogota
 
+                  # Base configuration
+                  repositories_affiliations: owner # Forzar solo repositorios propios en todo el SVG
+
                   # Languages plugin
                   plugin_languages: yes
                   plugin_languages_analysis_timeout: 15
@@ -37,33 +40,30 @@ jobs:
                   plugin_languages_sections: most-used
                   plugin_languages_threshold: 0%
                   plugin_languages_details: bytes-size, percentage
-                  plugin_languages_skipped: "" # Asegurar que no se salte nada propio
-                  plugin_languages_other: no # No mostrar "otros" para mantener limpieza
-                  # plugin_languages_indepth: yes # Deshabilitado para mejorar estabilidad
+                  plugin_languages_skipped: ""
+                  plugin_languages_other: no
 
                   # Notable repositories plugin
                   plugin_notable: yes
-                  plugin_notable_from: owner, self
+                  plugin_notable_from: owner
                   plugin_notable_self: yes
                   plugin_notable_repositories: yes
-                  plugin_notable_types: owner # Solo mostrar repositorios donde soy dueño
-
-                  # Base configuration
-                  # repositories_affiliations: owner # Esto obligaría a que el bloque base solo use mis repositorios
+                  plugin_notable_types: owner
 
                   # Achievements plugin
                   plugin_achievements: yes
                   plugin_achievements_threshold: B
                   plugin_achievements_secrets: no
                   plugin_achievements_limit: 10
+                  plugin_achievements_display: compact # Mayor compatibilidad
 
                   # Habits plugin
                   plugin_habits: yes
-                  plugin_habits_from: 100
+                  plugin_habits_from: 50 # Reducido aún más para estabilidad
                   plugin_habits_days: 14
                   plugin_habits_facts: yes
                   plugin_habits_charts: yes
-                  plugin_habits_trim: yes # Ignorar eventos menos relevantes
+                  plugin_habits_trim: yes
 
                   # Isocalendar plugin
                   plugin_isocalendar: yes
