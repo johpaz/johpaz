@@ -1,67 +1,120 @@
 name: Metrics
 on:
-    # Schedule updates (every day at midnight)
-    schedule: [{ cron: "0 0 * * *" }]
-    # Lines below let you run workflow manually and on each commit
-    workflow_dispatch:
-    push: { branches: ["master", "main"] }
+  schedule: [{ cron: "0 0 * * *" }]
+  workflow_dispatch:
+  push: { branches: ["master", "main"] }
 
 jobs:
-    github-metrics:
-        runs-on: ubuntu-latest
-        permissions:
-            contents: write
-        steps:
-            - uses: lowlighter/metrics@latest
-              with:
-                  # Your GitHub token
-                  token: ${{ secrets.METRICS_TOKEN }}
+  # ============================================
+  # JOB 1: MÉTRICAS GENERALES
+  # ============================================
+  general-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Generate General Metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
 
-                  # Output configuration
-                  filename: github-metrics.svg
-                  committer_message: "chore: update metrics"
-                  committer_branch: master
+          filename: github-metrics.svg
+          committer_branch: master
+          committer_message: "chore: update github metrics [skip ci]"
 
-                  # Options
-                  user: johpaz
-                  template: classic
-                  base: header, community, repositories, metadata
-                  config_timezone: America/Bogota
+          user: johpaz
+          template: classic
+          config_timezone: America/Bogota
 
-                  # Languages plugin
-                  plugin_languages: yes
-                  plugin_languages_analysis_timeout: 15
-                  plugin_languages_categories: markup, programming
-                  plugin_languages_colors: github
-                  plugin_languages_limit: 10
-                  plugin_languages_sections: most-used
-                  plugin_languages_threshold: 0%
-                  plugin_languages_details: bytes-size, percentage
-                  plugin_languages_indepth: yes
+          base: header, activity, community, repositories, metadata
+          # Ampliar alcance para reflejar actividad en repos ajenos
+          repositories_affiliations: owner, collaborator, organization_member
+          repositories_forks: yes
 
-                  # Notable repositories plugin
-                  plugin_notable: yes
-                  plugin_notable_from: owner
-                  plugin_notable_self: yes
-                  plugin_notable_repositories: yes
+          # Isocalendar (Gráfico 3D): Año completo para ver mejor los meses
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
 
-                  # Stars plugin
-                  plugin_stars: yes
-                  plugin_stars_limit: 4
+          plugin_lines: yes
+          plugin_lines_sections: base
 
-                  # Achievements plugin
-                  plugin_achievements: yes
-                  plugin_achievements_threshold: B
-                  plugin_achievements_secrets: yes
-                  plugin_achievements_limit: 10
+          plugin_traffic: no
+          plugin_languages: no
 
-                  # Habits plugin
-                  plugin_habits: yes
-                  plugin_habits_from: 200
-                  plugin_habits_days: 14
-                  plugin_habits_facts: yes
-                  plugin_habits_charts: yes
+          plugin_achievements: no
+          plugin_habits: no
+          plugin_activity: no
+          plugin_notable: no
 
-                  # Isocalendar plugin (replaces activity)
-                  plugin_isocalendar: yes
-                  plugin_isocalendar_duration: half-year
+  # ============================================
+  # JOB 2: LENGUAJES (espera a que termine job 1)
+  # ============================================
+  languages-chart:
+    runs-on: ubuntu-latest
+    needs: general-metrics
+    permissions:
+      contents: write
+    steps:
+      - name: Generate Languages Chart
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_token: ${{ secrets.METRICS_TOKEN }}
+
+          filename: github-languages.svg
+          committer_branch: master
+          committer_message: "chore: update languages chart [skip ci]"
+
+          user: johpaz
+          base: header
+          # Configuración "Sin Filtros" para garantizar datos
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+
+          plugin_languages: yes
+          plugin_languages_ignored: "" # Mostrar TODO (incluido HTML/CSS)
+          plugin_languages_limit: 10
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_colors: rainbow
+          plugin_languages_indepth: no # Usar API (rápido y fiable)
+          plugin_languages_analysis_timeout: 60
+          plugin_languages_categories: markup, programming, data
+
+  # ============================================
+  # JOB 3: SNAKE (espera a que termine job 2)
+  # ============================================
+  snake-animation:
+    runs-on: ubuntu-latest
+    needs: languages-chart
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Generate Snake Animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: johpaz
+          outputs: |
+            github-contribution-grid-snake.svg?palette=github-light
+            github-contribution-grid-snake-dark.svg?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+
+      - name: Commit Snake
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add github-contribution-grid-snake*.svg
+
+          if ! git diff --quiet HEAD || ! git diff --staged --quiet; then
+            git commit -m "chore: update snake animation [skip ci]"
+            git push origin master
+          fi
