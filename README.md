@@ -95,14 +95,13 @@ En el canal encontrarás:
 
 ## 🐝 Proyectos Destacados — Open Source
 
-### [Hive](https://github.com/johpaz/hive) — Gateway de Agentes IA 🐝
-
 <div align="center">
-  <img src="https://img.shields.io/github/stars/johpaz/hive?style=for-the-badge&color=yellow&label=Stars" alt="Hive Stars">
-  <img src="https://img.shields.io/github/forks/johpaz/hive?style=for-the-badge&color=blue&label=Forks" alt="Hive Forks">
+  <img src="hive-ecosystem-stats.svg" alt="Hive Ecosystem Stats" width="100%">
 </div>
 
-> 232 Commits · 51K+ líneas de código
+> Stars, forks y última actividad de cada repo se generan solos todos los días vía GitHub Actions ([ver script](.github/scripts/generate-hive-stats.mjs)).
+
+### [Hive](https://github.com/johpaz/hive) — Gateway de Agentes IA 🐝
 
 Gateway de IA orquestado — un enjambre de agentes especializados que trabajan juntos bajo la coordinación de un gateway central. Local-first, multi-canal, open source. Construido desde Colombia para el mundo.
 
@@ -120,23 +119,15 @@ Gateway de IA orquestado — un enjambre de agentes especializados que trabajan 
 
 ### [HiveLearn](https://github.com/johpaz/HiveLearn) — Aprendizaje Adaptativo 📚
 
-<div align="center">
-  <img src="https://img.shields.io/github/stars/johpaz/HiveLearn?style=for-the-badge&color=yellow&label=Stars" alt="HiveLearn Stars">
-</div>
-
-> 29 Commits
-
 Plataforma de aprendizaje con 16 agentes de IA especializados que generan lecciones personalizadas. Onboarding conversacional, mundo pixel art interactivo (PixiJS), gamificación.
 
-### [Hive-CLI](https://github.com/johpaz/hive-cli) — Inferencia Local ⚡
+### [HiveCode](https://github.com/johpaz/hiveCode) — Ingeniería de Software Autónoma 🛠️
 
-<div align="center">
-  <img src="https://img.shields.io/github/stars/johpaz/hive-cli?style=for-the-badge&color=yellow&label=Stars" alt="Hive-CLI Stars">
-</div>
+Sistema de ingeniería de software autónomo y console-first, orquestado por **BEE**, un coordinador senior que clasifica cada tarea y la reparte entre 13 agentes especializados (Backend, Frontend, Mobile, Seguridad, QA y más) que trabajan en paralelo. Memoria persistente en SQLite que aprende de cada sesión. TUI en Rust + motor en Bun.
 
-> 19 Commits
+### [Hive SDK](https://github.com/johpaz/hive-sdk) — Framework de Agentes para Desarrolladores 🧰
 
-CLI multimodal de llama.cpp (fork TurboQuant). Soporta texto + imagen + audio. Backends: CPU, Vulkan, CUDA, Metal. Cross-platform: Linux, macOS, Windows.
+SDK para construir agentes de IA con Context Engineering, FTS5, ACE y Swarm — nativo para Bun. Incluye 66 tools integradas, scheduler DAG para multi-agentes, soporte para OpenAI/Anthropic/Gemini/Ollama y CLI para crear, correr y testear agentes.
 
 ---
 
@@ -168,6 +159,7 @@ CLI multimodal de llama.cpp (fork TurboQuant). Soporta texto + imagen + audio. B
 - **[toon-format-parser-n8n](https://github.com/johpaz/toon-format-parser-n8n)** – Nodo personalizado para n8n que procesa el formato TOON.
 - **[Profinder](https://github.com/johpaz/Profinder)** – Conecta profesionales con clientes en una plataforma robusta.
 - **[ArsMonitor](https://github.com/johpaz/Arsmonitor)** – App médica para monitoreo de gases arteriales en tiempo real.
+- **[Hive-CLI](https://github.com/johpaz/hive-cli)** – CLI multimodal de inferencia local (fork de llama.cpp). Soporta texto + imagen + audio en CPU, Vulkan, CUDA y Metal.
 
 ---
 

@@ -118,3 +118,40 @@ jobs:
             git commit -m "chore: update snake animation [skip ci]"
             git push origin master
           fi
+
+  # ============================================
+  # JOB 4: HIVE ECOSYSTEM STATS (espera a que termine job 3)
+  # ============================================
+  hive-ecosystem-stats:
+    runs-on: ubuntu-latest
+    needs: snake-animation
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate Hive ecosystem stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+        run: node .github/scripts/generate-hive-stats.mjs
+
+      - name: Commit Hive stats
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add hive-ecosystem-stats.svg
+
+          if ! git diff --quiet HEAD || ! git diff --staged --quiet; then
+            git commit -m "chore: update hive ecosystem stats [skip ci]"
+            git push origin master
+          fi
