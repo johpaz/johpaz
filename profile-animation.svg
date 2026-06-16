@@ -19,13 +19,18 @@
       <feGaussianBlur stdDeviation="3" result="blur" />
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
+
+    <!-- Subtle circuit-dot background texture -->
+    <pattern id="circuit-dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#58a6ff" />
+    </pattern>
   </defs>
 
   <style>
     /* Usamos fuentes del sistema para máxima compatibilidad con GitHub */
     .text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; fill: #c9d1d9; }
     .name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; fill: #f0f6fc; filter: url(#glow); }
-    .role { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 18px; font-weight: 400; fill: #8b949e; }
+    .role { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; font-size: 18px; font-weight: 400; fill: #a8b3bf; }
     .highlight { fill: url(#glow-grad); font-weight: 700; }
 
     /* Animations */
@@ -61,13 +66,15 @@
     .gear { transform-origin: center; animation: rotate 10s linear infinite; transform-box: fill-box; }
     .floating { animation: float 4s infinite ease-in-out; }
     
-    .text-1 { animation: cycleText 9s linear infinite; }
-    .text-2 { animation: cycleText 9s linear 3s infinite; }
-    .text-3 { animation: cycleText 9s linear 6s infinite; }
+    .text-1, .text-2, .text-3 { opacity: 0; }
+    .text-1 { animation: cycleText 9s ease-in-out infinite; }
+    .text-2 { animation: cycleText 9s ease-in-out 3s infinite; }
+    .text-3 { animation: cycleText 9s ease-in-out 6s infinite; }
   </style>
 
   <!-- Background container -->
   <rect width="700" height="250" rx="12" fill="url(#bg-grad)" stroke="#30363d" stroke-width="1" />
+  <rect width="700" height="250" rx="12" fill="url(#circuit-dots)" opacity="0.15" />
 
   <!-- Icons Group (Floating) -->
   <g class="floating">
