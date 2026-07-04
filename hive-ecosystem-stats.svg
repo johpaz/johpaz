@@ -23,9 +23,9 @@
     <g transform="translate(0, 83)">
       <text x="32" y="5" class="repo-name">🐝 Hive</text>
       <text x="420" y="5" class="stat">⭐ 49</text>
-      <text x="500" y="5" class="stat">🍴 15</text>
+      <text x="500" y="5" class="stat">🍴 14</text>
       <text x="580" y="5" class="stat-dim">TypeScript</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 13d</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hoy</text>
     </g>
 
     <g transform="translate(0, 137)">
@@ -41,7 +41,7 @@
       <text x="420" y="5" class="stat">⭐ 0</text>
       <text x="500" y="5" class="stat">🍴 0</text>
       <text x="580" y="5" class="stat-dim">TypeScript</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 16d</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 17d</text>
     </g>
 
     <g transform="translate(0, 245)">
@@ -49,7 +49,7 @@
       <text x="420" y="5" class="stat">⭐ 0</text>
       <text x="500" y="5" class="stat">🍴 0</text>
       <text x="580" y="5" class="stat-dim">TypeScript</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 15d</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 16d</text>
     </g>
 
     <g transform="translate(0, 299)">
@@ -57,6 +57,6 @@
       <text x="420" y="5" class="stat">⭐ 0</text>
       <text x="500" y="5" class="stat">🍴 0</text>
       <text x="580" y="5" class="stat-dim">C++</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 1m</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 2m</text>
     </g>
 </svg>
