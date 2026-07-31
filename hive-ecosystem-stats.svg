@@ -22,10 +22,10 @@
   
     <g transform="translate(0, 83)">
       <text x="32" y="5" class="repo-name">🐝 Hive</text>
-      <text x="420" y="5" class="stat">⭐ 51</text>
+      <text x="420" y="5" class="stat">⭐ 50</text>
       <text x="500" y="5" class="stat">🍴 14</text>
       <text x="580" y="5" class="stat-dim">TypeScript</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 2d</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 3d</text>
     </g>
 
     <g transform="translate(0, 137)">
@@ -49,7 +49,7 @@
       <text x="420" y="5" class="stat">⭐ 0</text>
       <text x="500" y="5" class="stat">🍴 0</text>
       <text x="580" y="5" class="stat-dim">TypeScript</text>
-      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 7d</text>
+      <text x="728" y="5" class="stat-dim" text-anchor="end">hace 8d</text>
     </g>
 
     <g transform="translate(0, 299)">
